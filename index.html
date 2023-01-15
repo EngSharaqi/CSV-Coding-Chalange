@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" /> 
+    <title>CSV Reader</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="container">
+            <div class="card">
+                <form id="handleForm">
+                    <label for="images" class="drop-container">
+                        <span class="drop-title">Drop files here</span>
+                        or
+                        <input class="form-control" type="file" accept=".csv" id="input" required/>
+                    </label>
+                    <div class="row aContainer">
+                        <a href="#0_order_log00.csv" id="a0"><i class="fas fa-cloud-download-alt"></i> 0_order_log00.csv</a>
+                        <a href="#1_order_log00.csv" id="a1"><i class="fas fa-cloud-download-alt"></i> 1_order_log00.csv</a>
+                    </div>
+                    <input class="btn btn-primary mb-2" type="submit" value="submit" />
+                </form>
+                    <p id="p">No data to show!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
